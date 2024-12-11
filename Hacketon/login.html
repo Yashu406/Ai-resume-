@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="Enter your email" id="email" required>
+            <input type="password" placeholder="Enter your password" id="password" required>
+          <a href="index.html">  <button type="submit" class="btn">Login</button></a>
+        </form>
+        
+        <!-- Google Login Button -->
+        <div class="google-login">
+            <button class="google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo"> Login with Google
+            </button>
+        </div>
+        
+        <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

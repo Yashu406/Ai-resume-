@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI-Powered Interview Platform</title>
+    <link rel="stylesheet" href="styles.css">
+       <!-- CodeMirror Styles -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="images/logo.jpg" alt="Logo" class="logo" width="100px">
+            <h1>AI-Powered Interview Platform</h1>
+            <p>Your one-stop solution for automated, intelligent interviews</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#coding">Coding Challenge</a></li>
+            <li><a href="#evaluation">Evaluation</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About the Platform</h2>
+            <p>This platform uses AI to create intelligent, automated interviews that evaluate candidates' coding skills, technical aptitude, and behavioral traits.</p>
+            <img src="images/about.jpg" alt="About the platform" class="feature-image" width="300px">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+                <li><img src="images/feature1.jpg" alt="Real-time Coding Assistance"><h3>Real-Time Coding Assistance</h3></li>
+                <li><img src="images/feature2.jpg" alt="Plagiarism Detection"><h3>Plagiarism Detection</h3></li>
+                <li><img src="images/feature3.jpg" alt="AI Behavioral Insights"><h3>AI Behavioral Insights</h3></li>
+                <li><img src="images/feature4.jpg" alt="Customizable Setup"><h3>Customizable Interview Setup</h3></li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- Coding Challenge Section -->
+        <section id="coding">
+            <div class="container">
+                <h2>Start Your Coding Challenge</h2>
+                <p>Test your skills in real-time with live coding challenges that simulate real-world problems. Write code, debug, and submit with real-time feedback!</p>
+                
+                <!-- Link to External Online Code Editor (e.g., Replit) -->
+                <div class="code-editor-container">
+                    <p>Click below to open the coding editor and start solving challenges:</p>
+                    <a href="https://replit.com/@your-username/your-repl-name" target="_blank" class="cta-button">Start Coding on Replit</a>
+                </div>
+                
+               
+        
+                <!-- Feedback Section -->
+                <div id="feedback" class="hidden">
+                    <h3>Feedback:</h3>
+                    <pre id="feedbackText"></pre>
+                </div>
+            </div>
+        </section>
+        
+
+    <!-- Evaluation Section -->
+    <div class="container">
+        <h2>Evaluate Your Skills</h2>
+        <p>Our AI-driven evaluation system will assess your code's performance, readability, and efficiency, along with analyzing your behavioral responses.</p>
+        
+        <!-- Link to external evaluation platform -->
+        <div class="evaluation-container">
+            <p>Test and evaluate your coding skills on the following platforms:</p>
+            <a href="https://www.hackerrank.com" target="_blank" class="cta-button">Start Coding Challenge on HackerRank</a>
+            <a href="https://www.codacy.com" target="_blank" class="cta-button">Evaluate Code Quality on Codacy</a>
+        </div>
+    </div>
+
+    <!--resume screening-->
+    <section id="resume-screening">
+        <div class="container">
+            <h2>AI-Powered Resume Screening</h2>
+            <p>Let our AI analyze your resume and evaluate your skills, qualifications, and experience to match job requirements.</p>
+    
+            <!-- Resume Upload Section -->
+            <div class="upload-container">
+                <label for="resume-upload" class="upload-label">Upload Your Resume (PDF or DOCX)</label>
+                <input type="file" id="resume-upload" class="upload-input" accept=".pdf, .docx">
+            </div>
+    
+            <!-- Button to Trigger Screening -->
+            <button class="cta-button" id="start-screening">Start Screening</button>
+    
+            <!-- External Integration Button -->
+            <p>Or directly use the AI-based Resume Parser:</p>
+            <div class="external-tool-links">
+                <a href="https://www.resumake.io" target="_blank" class="cta-button">Use Resumake</a>
+                <a href="https://www.hirevue.com/" target="_blank" class="cta-button">Use HireVue</a>
+            </div>
+    
+            <!-- Feedback Section -->
+            <div id="feedback" class="hidden">
+                <h3>Resume Screening Feedback:</h3>
+                <p id="feedbackText">Your resume is being analyzed. Please wait...</p>
+            </div>
+        </div>
+    </section>
+
+    
+            <!-- Interview Scheduling Section -->
+            <section id="mock-interviews">
+                <div class="container">
+                    <h2>Mock Interviews</h2>
+                    <p>Schedule and participate in mock interviews with experienced interviewers and get valuable feedback.</p>
+            
+                    <!-- Embedding an external mock interview platform -->
+                    <iframe src="https://www.interviewing.io" width="80%" height="500px" frameborder="0"></iframe>
+                </div>
+            </section>
+
+<!-- Skill-Based Video Interview Questions Section -->
+<section id="video-interview">
+    <div class="container">
+        <h2>Skill-Based Video Interview Questions</h2>
+        <p>Choose a technical skill and get pre-recorded video questions tailored to your expertise.</p>
+        <a href="https://www.youtube.com/results?search_query=previous+job+experience+interview+questions" target="_blank" class="cta-button">Watch Video Interview Questions</a>
+    </div>
+</section>
+
+<!-- AI Code Refactoring Suggestions Section -->
+<section id="code-refactoring">
+    <div class="container">
+        <h2>AI Code Refactoring Suggestions</h2>
+        <p>Submit your code and receive AI-driven suggestions to improve readability, efficiency, and maintainability.</p>
+        <a href="https://sonarqube.com" target="_blank" class="cta-button">Refactor Code with SonarQube</a>
+    </div>
+</section>
+
+<!-- Real-Time Collaboration for Group Coding Challenges Section -->
+<section id="collaboration">
+    <div class="container">
+        <h2>Real-Time Collaboration for Group Coding Challenges</h2>
+        <p>Collaborate with others in real-time to solve coding challenges together.</p>
+        <a href="https://teletype.atom.io/" target="_blank" class="cta-button">Collaborate with Teletype</a>
+    </div>
+</section>
+
+<!-- Skill Assessment Certificates Section -->
+<section id="certificates">
+    <div class="container">
+        <h2>Skill Assessment Certificates</h2>
+        <p>Earn certificates after completing coding challenges that validate your skills.</p>
+        <a href="https://www.certifyem.com" target="_blank" class="cta-button">Generate Skill Certificate</a>
+    </div>
+</section>
+    <!-- Leaderboard Section -->
+    <section id="leaderboard">
+        <div class="container">
+            <h2>Leaderboard</h2>
+            <p>Check out the top performers in coding challenges!</p>
+
+            <!-- Leaderboard Button -->
+            <button class="cta-button" id="leaderboardBtn">Show Leaderboard</button>
+
+            <!-- Leaderboard Table (Initially hidden) -->
+            <div id="leaderboardTable" class="hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>Challenges Solved</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>25</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>20</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sam Green</td>
+                            <td>18</td>
+                            <td>180</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+<!-- Interview Feedback Dashboard Section -->
+<section id="feedback-dashboard">
+    <div class="container">
+        <h2>Interview Feedback Dashboard</h2>
+        <p>Review your interview performance and get feedback on both technical and soft skills.</p>
+        <a href="https://your-firebase-dashboard-link" target="_blank" class="cta-button">View Feedback Dashboard</a>
+    </div>
+</section>
+            
+    <!-- Sign Up Section -->
+    <section id="signup">
+        <div class="container">
+            <h2>Create Your Account</h2>
+            <p>Get started by signing up for a free account to unlock all features and take coding challenges!</p>
+            <button class="cta-button">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <div class="container">
+            <h2>Already have an Account?</h2>
+            <p>Login to your account to access your dashboard, start challenges, and get feedback.</p>
+            <button class="cta-button">Login</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AI-Powered Interview Platform. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+</body>
+</html>
